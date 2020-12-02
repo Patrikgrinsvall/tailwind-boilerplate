@@ -1,0 +1,26 @@
+{
+  "name": "sr-tailwind-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplace for shared UI components with tailwind",
+  "license": "Copyright 2020 Silent Ridge Media",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx nodemon --exec yarn local",
+    "local": "yarn build && node live-server.js",
+    "build": "yarn postcss public/css/styles.css -o public/css/tailwind.css"
+  },
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "autoprefixer": "^10.0.4",
+    "live-server": "^1.2.1",
+    "nodemon": "^2.0.6",
+    "postcss": "^8.1.10",
+    "postcss-cli": "^8.3.0",
+    "postcss-import": "^13.0.0",
+    "tailwindcss": "^2.0.1"
+  }
+}
